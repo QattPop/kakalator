@@ -25,7 +25,7 @@ var num2 : String = ''
 
 var isAddTrue : bool = false
 var isMinTrue : bool = false
-var isDivTrue : bool = false
+var isDivTrue : bool = true
 var isMultTrue : bool = false
 
 
