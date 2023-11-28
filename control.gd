@@ -2,7 +2,6 @@ extends Control
 
 @onready var input_label: Label = $PanelContainer/VBoxContainer/HBoxContainer/MarginContainer/InputLabel
 @onready var value_label: Label = $PanelContainer/VBoxContainer/HBoxContainer/MarginContainer2/valueLabel
-
 @onready var button_1: Button = $PanelContainer/VBoxContainer/GridContainer/Button_1
 @onready var button_2: Button = $PanelContainer/VBoxContainer/GridContainer/Button_2
 @onready var button_3: Button = $PanelContainer/VBoxContainer/GridContainer/Button_3
@@ -25,75 +24,82 @@ var num2 : String = ''
 
 var isAddTrue : bool = false
 var isMinTrue : bool = false
-var isDivTrue : bool = true
+var isDivTrue : bool = false
 var isMultTrue : bool = false
 
+# input numbers
+
+# press button, update input label
+# add operator functions
+# calculate first and second values to create new value
+# move to value label once enter is hit
+# add other fucntions like delete, 
 
 
-
-
+func _process(delta):
+	print('newValue: ', newValue)
 
 func _on_button_1_pressed() -> void:
 	var index = num1.length() + 1
 	num1 = num1.insert(index, '1')
-	input_label.text = num1
+	input_label.text = str(num1)
 	
 func _on_button_2_pressed() -> void:
 	var index = num1.length() + 1
 	num1 = num1.insert(index, '2')
-	input_label.text = num1
+	input_label.text = str(num1)
 
 
 func _on_button_3_pressed() -> void:
 	var index = num1.length() + 1
 	num1 = num1.insert(index, '3')
-	input_label.text = num1
-
+	input_label.text = str(num1)
 
 func _on_button_4_pressed() -> void:
 	var index = num1.length() + 1
 	num1 = num1.insert(index, '4')
-	input_label.text = num1
-
+	input_label.text = str(num1)
+	
 func _on_button_5_pressed() -> void:
 	var index = num1.length() + 1
 	num1 = num1.insert(index, '5')
-	input_label.text = num1
+	input_label.text = str(num1)
 
 func _on_button_6_pressed() -> void:
 	var index = num1.length() + 1
 	num1 = num1.insert(index, '6')
-	input_label.text = num1
+	input_label.text = str(num1)
 
 func _on_button_7_pressed() -> void:
 	var index = num1.length() + 1
 	num1 = num1.insert(index, '7')
-	input_label.text = num1
+	input_label.text = str(num1)
 
 func _on_button_8_pressed() -> void:
-	var index = num1.length() + 1	
+	var index = num1.length() + 1
 	num1 = num1.insert(index, '8')
-	input_label.text = num1
+	input_label.text = str(num1)
 
 func _on_button_9_pressed() -> void:
 	var index = num1.length() + 1
 	num1 = num1.insert(index, '9')
-	input_label.text = num1
+	input_label.text = str(num1)
 
 func _on_button_0_pressed() -> void:
 	var index = num1.length() + 1
 	num1 = num1.insert(index, '0')
-	input_label.text = num1
+	input_label.text = str(num1)
 
 func _on_button_decimal_pressed() -> void:
 	if '.' not in num1:
 		var index = num1.length() + 1
 		num1 = num1.insert(index, '.')
 		input_label.text = num1		
-
+	pass
 
 func _on_button_plus_pressed() -> void:
-	pass # Replace with function body.
+	if isMultTrue = true
+	
 
 
 func _on_button_minus_pressed() -> void:

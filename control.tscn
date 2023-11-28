@@ -104,7 +104,7 @@ text = "9"
 
 [node name="Button_Multi" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
-text = "*"
+text = "×"
 
 [node name="Button_0" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
@@ -120,7 +120,7 @@ text = "Enter"
 
 [node name="Button_Div" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
-text = "/"
+text = "÷"
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/GridContainer/Button_1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/GridContainer/Button_2" to="." method="_on_button_2_pressed"]
